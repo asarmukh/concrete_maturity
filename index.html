@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI Sample — Concrete Maturity App</title>
+<meta name="description" content="A short UI design sample: screens from a concrete-strength monitoring app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #faf9f6;
+    --panel: #ffffff;
+    --ink: #17181a;
+    --ink-soft: #6b6d70;
+    --line: #e7e5df;
+    --accent: #2f6f62;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Inter", -apple-system, sans-serif;
+    line-height:1.55;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  .kicker{
+    font-size:13px;
+    font-weight:600;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  h1{
+    font-size:32px;
+    font-weight:700;
+    line-height:1.25;
+    margin:0 0 16px;
+    letter-spacing:-0.01em;
+  }
+  p.lede{
+    font-size:16.5px;
+    color:var(--ink-soft);
+    max-width:58ch;
+    margin:0 0 40px;
+  }
+  .item{
+    margin-bottom:48px;
+  }
+  .item h2{
+    font-size:16px;
+    font-weight:600;
+    margin:0 0 4px;
+  }
+  .item p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .item figure{
+    margin:0;
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+    background:#0d0d0c;
+  }
+  .item img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  footer{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 24px 64px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    border-top:1px solid var(--line);
+    padding-top:24px;
+  }
+  footer a{ color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">UI SAMPLE</p>
+  <h1>A few screens from an app I designed and built the UI for.</h1>
+  <p class="lede">
+    This is a concrete-strength monitoring app for a hardware startup — sensors report
+    temperature from inside a concrete pour, and the app turns that into a live strength
+    reading and a dashboard a site crew can actually use. Sharing it here as an example
+    of basic UI work: layout, data-heavy screens, and a simple flow from setup to report.
+  </p>
+
+  <div class="item">
+    <h2>Project list</h2>
+    <p>Overview of active pours — status, strength, sensors online at a glance.</p>
+    <figure><img src="./screenshots/project-list.png" alt="Project list screen showing active concrete pours with strength and sensor status"></figure>
+  </div>
+
+  <div class="item">
+    <h2>Project dashboard</h2>
+    <p>The main screen — sensor readings, a strength-over-time chart, and an event log.</p>
+    <figure><img src="./screenshots/project-detail.png" alt="Project detail dashboard with sensor table and strength chart"></figure>
+  </div>
+
+  <div class="item">
+    <h2>New project setup</h2>
+    <p>A short form flow for starting a new pour and connecting its sensors.</p>
+    <figure><img src="./screenshots/new-project.png" alt="New project setup screen with sensor discovery"></figure>
+  </div>
+
+  <div class="item">
+    <h2>Calibration</h2>
+    <p>A focused screen for one task: entering test results and fitting a curve.</p>
+    <figure><img src="./screenshots/calibration.png" alt="Calibration screen with a fitted strength curve"></figure>
+  </div>
+
+  <div class="item">
+    <h2>Report / archive view</h2>
+    <p>A finished project, laid out as a simple read-only summary and export.</p>
+    <figure><img src="./screenshots/archive.png" alt="Archived project summary with export options"></figure>
+  </div>
+
+  <div class="item">
+    <h2>Settings</h2>
+    <p>Basic settings screen with role switching and a couple of config fields.</p>
+    <figure><img src="./screenshots/settings.png" alt="Settings screen with user role and configuration options"></figure>
+  </div>
+
+</div>
+
+<footer>
+  Full spec and more screens available on request.
+</footer>
+
+</body>
+</html>
